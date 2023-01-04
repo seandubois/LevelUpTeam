@@ -1,5 +1,9 @@
 #!/bin/bash
 
+directory=$(pwd)
+ipaddress=$(curl -s ifconfig.me)
+
+echo "hello world"
 echo "Please enter your name:"
 read name
 echo "Reading.... please wait"
@@ -15,8 +19,11 @@ echo "Made on:" && date
 echo "-----------------------------"
 sleep 2
 echo "My IP address is:"
+echo "$ipaddress"
 echo "-----------------------------"
 sleep 2
-curl ifconfig.me
-
-This is week 4 - project test
+echo "your current directory is:"
+echo "$directory"
+echo "-----------------------------"
+sleep 3
+echo "This is week 4 - project test"
